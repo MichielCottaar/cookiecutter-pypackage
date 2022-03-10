@@ -16,8 +16,6 @@ stages:
 
 pytest_cov:
   stage: test
-  tags:
-    - docker
   script:
     - pip install pytest pytest-cov
     - pip install -e .
@@ -34,8 +32,6 @@ pytest_cov:
 
 pages:
   stage: deploy
-  tags:
-    - docker
   script:
     - pip install sphinx
     - cd doc
@@ -51,8 +47,6 @@ pages:
 
 to_pypi:
   stage: deploy
-  tags:
-    - docker
   script:
     - pip install twine
     - python setup.py sdist bdist_wheel
