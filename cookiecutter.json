@@ -5,5 +5,6 @@
     "git_username": "ndcn0236",
     "project_url": "https://git.fmrib.ox.ac.uk/{{cookiecutter.git_username}}/{{cookiecutter.project_name}}",
     "documentation_url": "https://open.win.ox.ac.uk/pages/{{cookiecutter.git_username}}/{{cookiecutter.project_name}}",
-    "description": "{{cookiecutter.project_name}}"
+    "description": "{{cookiecutter.project_name}}",
+    "minimum_python_version": ["6", "7", "8", "9", "10"]
 }

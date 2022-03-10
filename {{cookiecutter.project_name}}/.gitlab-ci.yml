@@ -30,6 +30,15 @@ pytest_cov:
   coverage: '/^TOTAL.+?(\d+\%)$/'
 
 
+py3{{cookiecutter.minimum_python_version}}
+  image: python:3.{{cookiecutter.minimum_python_version}}
+  stage: test
+  script:
+    - pip install pytest
+    - pip install -e .
+    - pytest src/tests
+
+
 pages:
   stage: deploy
   script:
