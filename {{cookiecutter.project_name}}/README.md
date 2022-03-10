@@ -44,9 +44,9 @@ open build/index.html
 For new features, please raise an [issue]({{cookiecutter.project_url}}/-/issues) to allow for discussion before you spend the time implementing them.
 
 ## Releasing new versions
-- Update the `__version__` number in "src/{{cookiecutter.project_name}}/__init__.py". Please, follow the guidelines of [semantic versioning](https://semver.org/).
-- Merge into the "master" branch
-- Manually activate the "to_pypi" task in the [pipeline]({{cookiecutter.project_url}}/-/pipelines/latest)
+- Run `bump2version` (install using `pip install bump2version`)
+- Push to gitlab
+- Manually activate the "to_pypi" task in the [pipeline]({{cookiecutter.project_url}}/-/pipelines/latest) to upload to pypi
 
 
 
