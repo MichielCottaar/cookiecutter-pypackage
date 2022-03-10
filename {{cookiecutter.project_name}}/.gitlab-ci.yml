@@ -60,3 +60,4 @@ to_pypi:
   when: manual
   only:
     - master
+    - tags
