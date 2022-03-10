@@ -51,7 +51,7 @@ pages:
     paths:
       - public
   only:
-    - master
+    - main
 
 
 to_pypi:
@@ -62,5 +62,5 @@ to_pypi:
     - TWINE_PASSWORD=${CI_JOB_TOKEN} TWINE_USERNAME=__token__ twine upload dist/*
   when: manual
   only:
-    - master
+    - main
     - tags
