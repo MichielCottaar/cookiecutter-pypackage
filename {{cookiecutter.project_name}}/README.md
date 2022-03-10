@@ -1,7 +1,7 @@
 [![PyPI - Downloads](https://img.shields.io/pypi/dm/{{cookiecutter.project_name}})](https://pypi.org/project/{{cookiecutter.project_name}}/)
 [![Documentation](https://img.shields.io/badge/Documentation-{{cookiecutter.project_name}}-blue)]({{cookiecutter.documentation_url}})
 [![Pipeline status]({{cookiecutter.project_url}}/badges/master/pipeline.svg)]({{cookiecutter.project_url}}/-/pipelines/latest)
-[![Coverage report]({{cookiecutter.project_url}}}}/badges/master/coverage.svg)]({{cookiecutter.documentation_url}}/htmlcov)
+[![Coverage report]({{cookiecutter.project_url}}/badges/master/coverage.svg)]({{cookiecutter.documentation_url}}/htmlcov)
 
 {{cookiecutter.description}}
 
