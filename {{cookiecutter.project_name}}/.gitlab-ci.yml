@@ -42,7 +42,7 @@ py3{{cookiecutter.minimum_python_version}}:
 pages:
   stage: deploy
   script:
-    - pip install . sphinx
+    - pip install . sphinx myst-parser
     - cd doc
     - sphinx-build source build
     - mv build ../public
