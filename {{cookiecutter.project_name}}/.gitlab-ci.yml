@@ -57,8 +57,9 @@ pages:
 to_pypi:
   stage: deploy
   script:
-    - pip install twine
-    - python setup.py sdist bdist_wheel
+    - pip install twine build
+    - python -m build sdist
+    - twine check dist/*
     - TWINE_PASSWORD=${CI_JOB_TOKEN} TWINE_USERNAME=__token__ twine upload dist/*
   when: manual
   only:
