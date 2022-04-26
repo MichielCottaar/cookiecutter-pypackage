@@ -2,7 +2,6 @@
     "full_name": "Michiel Cottaar",
     "email": "michiel.cottaar@ndcn.ox.ac.uk",
     "project_name": "project",
-    "git_username": "ndcn0236",
     "project_url": "https://git.fmrib.ox.ac.uk/ndcn0236/mcot",
     "documentation_url": "https://open.win.ox.ac.uk/pages/ndcn0236/mcot",
     "description": "{{cookiecutter.project_name}}",
