@@ -24,8 +24,15 @@ cd {{cookiecutter.project_name}}
 pip install -e .
 ```
 
+Development tools can be installed using:
+```
+pip install -r requirements_dev.txt
+pre-commit install  # installs pre-commit hooks to keep the code clean 
+```
+
+
 ## Running tests
-Tests are run using the [pytest](https://docs.pytest.org) framework. After installation (`pip install pytest`) they can be run from the project root as:
+Tests are run using the [pytest](https://docs.pytest.org) framework. They can be run from the project root as:
 ```shell
 pytest src/tests
 ```
