@@ -27,7 +27,7 @@ pip install -e .
 Development tools can be installed using:
 ```
 pip install -r requirements_dev.txt
-pre-commit install  # installs pre-commit hooks to keep the code clean 
+pre-commit install  # installs pre-commit hooks to keep the code clean
 ```
 
 
@@ -46,7 +46,7 @@ open build/index.html
 ```
 
 ## Contributing
-[Merge requests]({{cookiecutter.project_url}}/-/merge_requests) with any bug fixes or documentation updates are always welcome. 
+[Merge requests]({{cookiecutter.project_url}}/-/merge_requests) with any bug fixes or documentation updates are always welcome.
 
 For new features, please raise an [issue]({{cookiecutter.project_url}}/-/issues) to allow for discussion before you spend the time implementing them.
 
@@ -54,6 +54,3 @@ For new features, please raise an [issue]({{cookiecutter.project_url}}/-/issues)
 - Run `bump2version` (install using `pip install bump2version`)
 - Push to gitlab
 - Manually activate the "to_pypi" task in the [pipeline]({{cookiecutter.project_url}}/-/pipelines/latest) to upload to pypi
-
-
-
