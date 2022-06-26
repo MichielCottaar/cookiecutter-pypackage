@@ -4,3 +4,11 @@ requires = [
     "wheel"
 ]
 build-backend = "setuptools.build_meta"
+
+# linting
+[flake8]
+max-line-length = 99
+ignore = E203,E501,W503
+
+[darglint]
+strictness=long
