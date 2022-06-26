@@ -12,3 +12,6 @@ ignore = E203,E501,W503
 
 [darglint]
 strictness=long
+
+[tool.isort]
+profile = "black"
