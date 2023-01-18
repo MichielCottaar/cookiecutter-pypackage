@@ -8,6 +8,8 @@ variables:
 cache:
   paths:
     - .cache/pip
+  tags:
+    - docker
 
 stages:
   - test
