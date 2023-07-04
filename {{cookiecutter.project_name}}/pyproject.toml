@@ -6,12 +6,17 @@ requires = [
 build-backend = "setuptools.build_meta"
 
 # linting
-[flake8]
-max-line-length = 99
-ignore = "E203,E501,W503"
-
-[darglint]
-strictness="long"
-
-[tool.isort]
-profile = "black"
+[tool.ruff]
+line-length = 99
+select = [
+    "F", # flake8
+    "E", # pycodestyle
+    "W", # pycodestyle warnings
+    "I", # isort
+    "C90", # mccabe complexity
+    "D", # pydocstyle
+    "N", # pep8-naming
+    "B", # flake8-bugbear
+]
+ignore = ["D203","D212"]
+src = ["src"]
