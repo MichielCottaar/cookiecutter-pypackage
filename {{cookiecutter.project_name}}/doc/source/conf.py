@@ -1,4 +1,4 @@
-# Configuration file for the Sphinx documentation builder.
+"""Configuration file for the Sphinx documentation builder."""
 #
 # This file only contains a selection of the most common options. For a full
 # list see the documentation:
@@ -12,14 +12,14 @@
 #
 import os
 import sys
-sys.path.insert(0, os.path.abspath('../../src'))
-from {{cookiecutter.project_name}} import __version__
+sys.path.insert(0, os.path.abspath("../../src"))
+from {{cookiecutter.project_name}} import __version__ # noqa: E402
 
 
 # -- Project information -----------------------------------------------------
 
-project = '{{cookiecutter.project_name}}'
-author = '{{cookiecutter.full_name}}'
+project = "{{cookiecutter.project_name}}"
+author = "{{cookiecutter.full_name}}"
 version = __version__
 
 # The full version, including alpha/beta/rc tags

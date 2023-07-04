@@ -1,1 +1,1 @@
-"""Main test folder"""
+"""Main test folder."""

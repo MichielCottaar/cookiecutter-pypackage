@@ -15,6 +15,11 @@ stages:
   - test
   - deploy
 
+style:
+  stage: test
+  script:
+    - pip install . pre-commit
+    - pre-commit run --all-files
 
 pytest_cov:
   stage: test
