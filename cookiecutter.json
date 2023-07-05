@@ -2,6 +2,7 @@
     "full_name": "Michiel Cottaar",
     "email": "michiel.cottaar@ndcn.ox.ac.uk",
     "project_name": "project",
+    "project_slug": "{{ cookiecutter.project_name.lower().replace(' ', '_').replace('-', '_') }}",
     "git_username": "ndcn0236",
     "project_url": "https://git.fmrib.ox.ac.uk/{{cookiecutter.git_username}}/{{cookiecutter.project_name}}",
     "documentation_url": "https://open.win.ox.ac.uk/pages/{{cookiecutter.git_username}}/{{cookiecutter.project_name}}",
