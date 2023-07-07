@@ -29,8 +29,8 @@ pytest_cov:
     - pip install pytest pytest-cov
     - pip install -e .
     - pytest --cov=. --cov-report xml src/tests
-    - coverage report --include="src/{{cookiecutter.project_name}}/**.py"
-    - coverage html --include="src/{{cookiecutter.project_name}}/**.py"
+    - coverage report --include="src/{{cookiecutter.project_slug}}/*.py" --include="src/{{cookiecutter.project_slug}}/*/*.py"
+    - coverage html --include="src/{{cookiecutter.project_slug}}/**.py" --include="src/{{cookiecutter.project_slug}}/*/*.py"
   artifacts:
     reports:
       coverage_report:
